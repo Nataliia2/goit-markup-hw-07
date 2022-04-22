@@ -2,11 +2,11 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-color: var(--background-color);
+    background-color: $background-color;
     background-image: linear-gradient(to right,
             rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0.4)),
-        url(../img/фон.jpg);
+        url('../../img/фон.jpg');
     background-repeat: no-repeat;
     background-position: center;
 

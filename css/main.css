@@ -62,7 +62,7 @@ h2 {
   list-style: none;
 }
 
-.flex, .modal-button, .header-flex, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-list, .clients-link, .footer-form--input::-webkit-input-placeholder {
+.flex, .modal-button, .header-flex, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-list, .clients-link, .footer-form--input::-webkit-input-placeholder, .portfolio-filters, .portfolio-overlai {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -71,7 +71,7 @@ h2 {
           align-items: center;
 }
 
-.flex, .modal-button, .header-flex, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-list, .clients-link, .footer-form--input:-ms-input-placeholder {
+.flex, .modal-button, .header-flex, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-list, .clients-link, .footer-form--input:-ms-input-placeholder, .portfolio-filters, .portfolio-overlai {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -80,7 +80,7 @@ h2 {
       align-items: center;
 }
 
-.flex, .modal-button, .header-flex, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-list, .clients-link, .footer-form--input::-ms-input-placeholder {
+.flex, .modal-button, .header-flex, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-list, .clients-link, .footer-form--input::-ms-input-placeholder, .portfolio-filters, .portfolio-overlai {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -89,7 +89,7 @@ h2 {
       align-items: center;
 }
 
-.flex, .modal-button, .header-flex, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-list, .clients-link, .footer-form--input::placeholder {
+.flex, .modal-button, .header-flex, .main-nav, .contacts-item--mail, .contacts--mail, .features-vector, .command-social, .social, .socials-icon, .footer-social, .clients-list, .clients-link, .footer-form--input::placeholder, .portfolio-filters, .portfolio-overlai {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +99,20 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .logo {
@@ -302,9 +316,9 @@ h2 {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--background-color);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/фон.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/фон.jpg);
+  background-color: #2f303a;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../img/фон.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../img/фон.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 1600px;
@@ -318,20 +332,6 @@ h2 {
   width: 696px;
   margin-right: auto;
   margin-left: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .features {
@@ -488,6 +488,10 @@ h2 {
   background-color: #2196f3;
 }
 
+.footer-list .footer-li + .footer-li {
+  margin-left: 10px;
+}
+
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -549,15 +553,6 @@ h2 {
   margin-top: 20px;
 }
 
-.addressfooter-address {
-  color: #ffffff;
-  margin-top: 20px;
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-  text-decoration: none;
-}
-
 .footer-contacts a {
   color: rgba(255, 255, 255, 0.6);
   padding-left: 0;
@@ -577,6 +572,15 @@ h2 {
   margin-bottom: 9px;
 }
 
+.footer-address {
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  text-decoration: none;
+}
+
 .footer-form--conteiner {
   margin-left: 93px;
 }
@@ -594,6 +598,14 @@ h2 {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.footer-form-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .footer-form--input {
@@ -822,7 +834,7 @@ textarea {
 .checkbox-polisi:checked + .checkbox-icon {
   border-color: transparent;
   background-color: #2196f3;
-  background-image: url("../img/icon check (1).svg");
+  background-image: url("../img/icon check.svg");
   background-size: contain;
   background-origin: border-box;
 }
@@ -832,12 +844,6 @@ textarea {
 }
 
 .portfolio-filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -863,15 +869,15 @@ textarea {
 }
 
 .list-btn:hover, .list-btn:focus {
-  color: #ffffff;
   background-color: #2196f3;
+  color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .current {
-  color: #ffffff;
   background-color: #2196f3;
+  color: #ffffff;
 }
 
 .portfolio-container {
@@ -918,33 +924,24 @@ textarea {
   margin-bottom: 0;
 }
 
-.portfolio-element:hover .portfolio-overlai {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .portfolio-overlai {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
   width: 100%;
   height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  position: absolute;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-element:hover .portfolio-overlai {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .overlai-tex {
