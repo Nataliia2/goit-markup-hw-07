@@ -1,17 +1,3 @@
-.addressfooter-address {
-    color: $white-text;
-
-    margin-top: 20px;
-
-    font-size: 14px;
-    line-height: 1.7;
-
-    font-style: normal;
-
-
-    text-decoration: none;
-}
-
 .footer-contacts a {
     color: rgba(255, 255, 255, 0.6);
 
@@ -32,4 +18,18 @@
 
 .footer-mail {
     margin-bottom: 9px;
+}
+
+.footer-address {
+    color: $white-text;
+    
+    margin-top: 20px;
+    
+    font-size: 14px;
+    line-height: 1.7;
+    
+    font-style: normal;
+    
+    text-decoration: none;
+    
 }
